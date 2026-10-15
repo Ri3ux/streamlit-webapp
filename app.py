@@ -36,7 +36,7 @@ if st.checkbox('Construir un histograma'):
 if st.checkbox('Construir un gráfico de dispersión'):
     st.write('Relación entre el kilometraje y el precio')
     fig = px.scatter(df, x='odometer', y='price', color='condition',
-                     opacity=0.5, title='Relacion entre kilometraje y precio del coche')
+                     opacity=0.5, title='Relación entre kilometraje y precio del coche')
     fig.update_layout(
         xaxis_title='Kilometraje (millas)',
         yaxis_title='Precio (USD)',
